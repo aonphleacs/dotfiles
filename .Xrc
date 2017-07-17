@@ -3,7 +3,7 @@
 !-------------------------------------------------------------------------------
 
 Xft.dpi:                    96
-Xft.antialias:              false
+Xft.antialias:              true
 Xft.rgba:                   rgb
 Xft.hinting:                true
 Xft.hintstyle:              hintslight
@@ -20,7 +20,7 @@ URxvt.internalBorder:       3
 URxvt.lineSpace:            0
 
 ! Fonts
-URxvt.allow_bold:           false
+URxvt.allow_bold:           true
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
 URxvt*font: xft:Monospace:pixelsize=13
 URxvt*boldFont: xft:Monospace:pixelsize=13
@@ -46,7 +46,7 @@ URxvt.pointerBlank:         true
 
 ! NOTE: Shell colors are defined by base16_shell and changed via that script. See call in .zshrc
 ! There is a glitch with the background not being set for the entire terminal, just the shell. See github for details
-*background: #1d1f21
+!*background: #1d1f21
 
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme - android_notification
