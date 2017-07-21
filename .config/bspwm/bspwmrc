@@ -14,7 +14,7 @@ xrandr --output DVI-I-0 --mode 1920x1080 --left-of HDMI-A-0
 sxhkd -m -1 &
 
 # load Compton
-compton -b
+compton &
 
 # set compose key to menu
 setxkbmap us -option compose:menu
