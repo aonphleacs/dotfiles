@@ -1,1 +1,0 @@
-/home/amber/.zprezto/runcoms/zshrc
