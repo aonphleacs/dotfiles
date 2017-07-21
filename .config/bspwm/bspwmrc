@@ -7,6 +7,9 @@ xrdb .Xrc
 # turn off DPMS (no screen blackout)
 xset -dpms
 
+# set left screen to the left
+xrandr --output DVI-I-0 --mode 1920x1080 --left-of HDMI-A-0
+
 # load sxhkd
 sxhkd -m -1 &
 
@@ -21,12 +24,14 @@ setxkbmap us -option compose:menu
 #~/.config/lemonbar/lemonrc.sh | lemonbar -p &
 
 # load Telegram
-~/prog/Telegram/Telegram &
+bspc rule -a Telegram desktop='^6'
+~/bin/Telegram/Telegram &
 
 # bspc setup
 
-bspc monitor DVI-I-2 -d I II III IV 
-bspc monitor DVI-I-1 -d V VI VII VIII 
+bspc monitor HDMI-A-0 -d I II III IV 
+bspc monitor DVI-I-0 -d V VI VII VIII 
+bspc monitor DVI-I-1 -d IX X XI XII
 
 bspc config border_width         2
 bspc config window_gap          12
